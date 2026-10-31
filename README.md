@@ -1,24 +1,24 @@
 <!--
   SETUP (two minutes)
   1. Find and replace @@GITHUB@@ with your GitHub username and @@LINKEDIN@@ with your LinkedIn slug.
-     They only appear in links, never in images, so nothing breaks if you forget.
+     Both appear only in links, never in images, so nothing breaks if you forget.
   2. Push this repo (it must be named exactly like your username), then run the "Profile cards"
      workflow once from the Actions tab. It fills in the live stats, languages, heatmap and snake.
+  3. Project links: add a Source or Live demo link under a project only once you have the real URL.
 -->
 
 <div align="center">
 
-<img src="assets/hero.svg" alt="Aaditya Mittal. Backend integrations, APIs and AI." width="100%" />
+<img src="assets/hero.svg" alt="Aaditya Mittal, Analyst at Deloitte USI. Backend integrations, APIs and AI." width="100%" />
 
 <br /><br />
 
-<a href="https://www.linkedin.com/in/@@LINKEDIN@@"><img src="assets/btn-linkedin.svg" alt="Connect on LinkedIn" height="46" /></a>
-<a href="mailto:aaditya.mittal111@gmail.com"><img src="assets/btn-email.svg" alt="Email aaditya.mittal111@gmail.com" height="46" /></a>
-<a href="https://codolio.com/profile/Aaditya%20Mittal"><img src="assets/btn-codolio.svg" alt="Coding profile on Codolio" height="46" /></a>
+<a href="https://www.linkedin.com/in/@@LINKEDIN@@"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="48" /></a>&nbsp;&nbsp;
+<a href="https://github.com/@@GITHUB@@"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" height="48" /></a>&nbsp;&nbsp;
+<a href="mailto:aaditya.mittal111@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" alt="Email aaditya.mittal111@gmail.com" height="48" /></a>&nbsp;&nbsp;
+<a href="https://codolio.com/profile/Aaditya%20Mittal"><img src="https://img.shields.io/badge/Codolio-Combined%20coding%20stats-6D28D9?style=for-the-badge" alt="My combined coding stats on Codolio" height="40" /></a>
 
 <br /><br />
-
-**Quick links**
 
 [About](#about-me) &nbsp;|&nbsp; [Top project](#top-project) &nbsp;|&nbsp; [More work](#more-work) &nbsp;|&nbsp; [Tech stack](#tech-stack) &nbsp;|&nbsp; [Experience](#experience) &nbsp;|&nbsp; [Stats](#stats) &nbsp;|&nbsp; [Connect](#connect-with-me)
 
@@ -39,7 +39,7 @@
 
 I wrote my first program in 9th standard. It was meant to print the Fibonacci series. The computer disagreed with my ideas, so I changed something, ran it again, changed something else, ran it again.
 
-That loop never left. Today I work as an Analyst on enterprise platforms, building backend integrations and APIs on ServiceNow. Most of it is getting systems that don't always agree to agree, and I like it for exactly that reason. I am moving toward AI and software engineering, with ServiceNow as the entry point and not the destination.
+That loop never left. I am an Analyst at Deloitte USI, where I build backend integrations and APIs on ServiceNow. Most of it is getting systems that don't always agree to agree, and I like it for exactly that reason. I am moving toward AI and software engineering, with ServiceNow as the entry point and not the destination.
 
 **Education:** B.Tech in Computer Science (AI & ML), JECRC University, CGPA 9.49
 <br />
@@ -49,7 +49,8 @@ That loop never left. Today I work as an Analyst on enterprise platforms, buildi
 
 ```js
 const aaditya = {
-  role: "Analyst, backend integrations & APIs",
+  role: "Analyst, Deloitte USI",
+  focus: "backend integrations & APIs",
   platform: "ServiceNow",
   languages: ["Python", "C++", "JavaScript"],
   building: ["FastAPI services", "LLM apps"],
@@ -67,7 +68,7 @@ while (!solved) {
 
 ### Social Media Engagement Tracker
 
-My hackathon-winning ServiceNow app, and the reason I got to work on real integrations in the first place. It pulls Facebook and Instagram data every 15 minutes, scores the sentiment of what people say, clusters their comments, and raises an alert the moment a PR crisis starts to build. Weekly and monthly reports go out on their own.
+My hackathon-winning ServiceNow app, and the project that led to my Deloitte internship. It pulls Facebook and Instagram data every 15 minutes, scores the sentiment of what people say, clusters their comments, and raises an alert the moment a PR crisis starts to build. Weekly and monthly reports go out on their own.
 
 I decided the whole build and wrote the ingestion layer, tuned to API limits so it scales to 10,000+ interactions per account per day. It won **All India Rank 1** at the ServiceNow x Deloitte HackNow, among 260+ teams.
 
@@ -102,7 +103,6 @@ flowchart LR
         <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" alt="Playwright" />
         <img src="https://img.shields.io/badge/Gemini%202.5%20Flash-8E75B2?style=flat-square" alt="Gemini 2.5 Flash" />
       </p>
-      <p><a href="https://github.com/@@GITHUB@@?tab=repositories&q=summarizer">Source</a></p>
     </td>
     <td width="33%" valign="top">
       <h3>Anime Face Generator</h3>
@@ -111,7 +111,6 @@ flowchart LR
         <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square" alt="PyTorch" />
         <img src="https://img.shields.io/badge/PyTorch%20Lightning-792EE5?style=flat-square" alt="PyTorch Lightning" />
       </p>
-      <p><a href="https://github.com/@@GITHUB@@?tab=repositories&q=dcgan">Source</a></p>
     </td>
     <td width="33%" valign="top">
       <h3>IAESTE chapter website</h3>
@@ -120,7 +119,6 @@ flowchart LR
         <img src="https://img.shields.io/badge/React-20232A?style=flat-square" alt="React" />
         <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square" alt="Tailwind CSS" />
       </p>
-      <p><a href="https://github.com/@@GITHUB@@?tab=repositories&q=iaeste">Source</a></p>
     </td>
   </tr>
 </table>
@@ -145,67 +143,26 @@ flowchart LR
 
 ## Tech stack
 
-<table>
-  <tr>
-    <td width="170"><b>Languages</b><br /><sub>Python, C++, JavaScript, HTML, CSS</sub></td>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,cpp,js,html,css&theme=dark" />
-        <img src="https://skillicons.dev/icons?i=py,cpp,js,html,css&theme=light" alt="Python, C++, JavaScript, HTML, CSS" />
-      </picture>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Backend</b><br /><sub>FastAPI, Node.js, Express, REST APIs</sub></td>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi,nodejs,express&theme=dark" />
-        <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express&theme=light" alt="FastAPI, Node.js, Express" />
-      </picture>
-      &nbsp;<img src="https://img.shields.io/badge/REST%20APIs-7C3AED?style=for-the-badge" alt="REST APIs" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Data</b><br /><sub>MongoDB, MySQL, PostgreSQL</sub></td>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark" />
-        <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=light" alt="MongoDB, MySQL, PostgreSQL" />
-      </picture>
-    </td>
-  </tr>
-  <tr>
-    <td><b>AI and ML</b><br /><sub>PyTorch, LLM apps</sub></td>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=pytorch&theme=dark" />
-        <img src="https://skillicons.dev/icons?i=pytorch&theme=light" alt="PyTorch" />
-      </picture>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Frontend</b><br /><sub>React, Tailwind CSS</sub></td>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,tailwind&theme=dark" />
-        <img src="https://skillicons.dev/icons?i=react,tailwind&theme=light" alt="React, Tailwind CSS" />
-      </picture>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Platform</b><br /><sub>ServiceNow, Workflow Studio, Scripted REST APIs</sub></td>
-    <td><img src="https://img.shields.io/badge/ServiceNow-81B5A1?style=for-the-badge" alt="ServiceNow" /></td>
-  </tr>
-  <tr>
-    <td><b>Tools</b><br /><sub>Git, GitHub, Postman, Vercel, Linux, VS Code</sub></td>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,postman,vercel,linux,vscode&theme=dark" />
-        <img src="https://skillicons.dev/icons?i=git,github,postman,vercel,linux,vscode&theme=light" alt="Git, GitHub, Postman, Vercel, Linux, VS Code" />
-      </picture>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+<p><b>Languages</b></p>
+<img src="https://skillicons.dev/icons?i=py,cpp,js,html,css&theme=dark" alt="Python, C++, JavaScript, HTML, CSS" />
+
+<p><b>Backend and data</b></p>
+<img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,mongodb,mysql,postgres&theme=dark" alt="FastAPI, Node.js, Express, MongoDB, MySQL, PostgreSQL" />
+
+<p><b>AI and frontend</b></p>
+<img src="https://skillicons.dev/icons?i=pytorch,react,tailwind&theme=dark" alt="PyTorch, React, Tailwind CSS" />
+
+<p><b>Tools</b></p>
+<img src="https://skillicons.dev/icons?i=git,github,postman,vercel,linux,vscode&theme=dark" alt="Git, GitHub, Postman, Vercel, Linux, VS Code" />
+
+<p><b>Platform</b></p>
+<img src="https://img.shields.io/badge/ServiceNow-81B5A1?style=for-the-badge" alt="ServiceNow" />
+<img src="https://img.shields.io/badge/Workflow%20Studio-293E40?style=for-the-badge" alt="Workflow Studio" />
+<img src="https://img.shields.io/badge/Scripted%20REST%20APIs-1F2937?style=for-the-badge" alt="Scripted REST APIs" />
+
+</div>
 
 <br />
 
@@ -213,8 +170,8 @@ flowchart LR
 
 | When | What | Highlights |
 | :-- | :-- | :-- |
-| Jul 2026 to now | **Analyst**, enterprise platforms (ServiceNow) | Own and extend backend integrations end to end: design docs, build, testing, UAT and handover. Took over integrations from other developers through knowledge transfer. |
-| Before full time | **Intern**, ServiceNow integrations | Built 6 integrations and the automation behind 500K+ tickets a year. Converted to full time. |
+| Jul 2026 to now | **Analyst**, Deloitte USI (ServiceNow) | Own and extend backend integrations end to end: design docs, build, testing, UAT and handover. Took over integrations from other developers through knowledge transfer. |
+| Before full time | **Intern**, Deloitte USI (ServiceNow) | Built 6 integrations and the automation behind 500K+ tickets a year. Converted to full time. |
 | 2025 | **Remote research intern**, Iran University of Science and Technology (IAESTE) | Evaluated bot-detection models (BotRGCN, BotHunter) on Twitter profiles, in a team of five across three countries. |
 | 2023 to 2025 | **IAESTE LC JECRC**, Head of IT-DA and Deputy Head, Incoming | Rebuilt the chapter website. Digitized intern onboarding and cut the time per intern by about 25 to 30 percent. |
 | 2023 to 2024 | **GDSC JECRC**, AI & ML core team | Anchored an orientation of about 200 people and taught Python to 25+ juniors. |
@@ -223,18 +180,16 @@ flowchart LR
 
 ## Stats
 
-<a href="https://codolio.com/profile/Aaditya%20Mittal"><img src="assets/codolio.svg" alt="Codolio: 700 problems solved, 26 contests, longest streak 177 days" width="100%" /></a>
-
-<br />
-
 <div align="center">
 
-<table>
-  <tr>
-    <td><img src="assets/stats.svg" alt="GitHub statistics" width="100%" /></td>
-    <td><img src="assets/langs.svg" alt="Top languages" width="100%" /></td>
-  </tr>
-</table>
+<a href="https://codolio.com/profile/Aaditya%20Mittal"><img src="assets/codolio.svg" alt="Combined coding stats from Codolio: 700 problems solved, 26 contests, 177 day longest streak" width="640" /></a>
+
+<br /><br />
+
+<img src="assets/stats.svg" alt="GitHub statistics" width="49%" />
+<img src="assets/langs.svg" alt="Top languages" width="49%" />
+
+<br /><br />
 
 <img src="assets/heatmap.svg" alt="Contribution heatmap for the last year" width="100%" />
 
@@ -247,7 +202,7 @@ flowchart LR
 
 </div>
 
-<sub>The GitHub cards are generated by [`scripts/generate_stats.py`](scripts/generate_stats.py) through a scheduled GitHub Action, with no third-party stats service involved. The Codolio numbers are as of October 2026.</sub>
+<sub>The GitHub cards are generated by [`scripts/generate_stats.py`](scripts/generate_stats.py) through a scheduled GitHub Action, with no third-party stats service involved. The Codolio card combines my practice across coding platforms, as of October 2026.</sub>
 
 <br />
 
@@ -266,7 +221,10 @@ flowchart LR
 
 ### Recruiter or engineer with a hard problem? Feel free to connect.
 
-<a href="https://www.linkedin.com/in/@@LINKEDIN@@"><img src="assets/btn-linkedin.svg" alt="Connect on LinkedIn" height="46" /></a>
-<a href="mailto:aaditya.mittal111@gmail.com"><img src="assets/btn-email.svg" alt="Email aaditya.mittal111@gmail.com" height="46" /></a>
+<a href="https://www.linkedin.com/in/@@LINKEDIN@@"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" height="48" /></a>&nbsp;&nbsp;
+<a href="https://github.com/@@GITHUB@@"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" height="48" /></a>&nbsp;&nbsp;
+<a href="mailto:aaditya.mittal111@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" alt="Email aaditya.mittal111@gmail.com" height="48" /></a>
+
+<sub>aaditya.mittal111@gmail.com</sub>
 
 </div>

@@ -53,14 +53,8 @@ query($login: String!) {
 
 CSS = """
   :root {
-    --card: #FFFFFF; --ink: #1F2937; --mute: #6B7280; --acc: #7C3AED; --line: #DDD6FE;
-    --l0: #F1F5F9; --l1: #DDD6FE; --l2: #C4B5FD; --l3: #8B5CF6; --l4: #6D28D9;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --card: #0D1117; --ink: #F9FAFB; --mute: #9CA3AF; --acc: #A78BFA; --line: #30363D;
-      --l0: #161B22; --l1: #3B2A7A; --l2: #5B3FD1; --l3: #8B5CF6; --l4: #C4B5FD;
-    }
+    --card: #0F1220; --ink: #F3F4F6; --mute: #9CA3AF; --acc: #A78BFA; --line: #2A2F4A;
+    --l0: #1A2038; --l1: #3B2A7A; --l2: #5B3FD1; --l3: #8B5CF6; --l4: #22D3EE;
   }
   .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
   .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
@@ -143,9 +137,10 @@ def streaks(days: list[dict]) -> tuple[int, int]:
 
 def wrap(width: int, height: int, title: str, inner: str) -> str:
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title)}">\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title)}">\n'
         f"  <title>{escape(title)}</title>\n  <style>{CSS}</style>\n"
-        f'  <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="16" fill="var(--card)" stroke="var(--line)" stroke-width="2" />\n'
+        '  <defs><linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151A33" /><stop offset="1" stop-color="#0F1220" /></linearGradient></defs>\n'
+        f'  <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="16" fill="url(#cardbg)" stroke="var(--line)" stroke-width="2" />\n'
         f"{inner}\n</svg>\n"
     )
 

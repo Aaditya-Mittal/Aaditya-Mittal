@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="t">
   <title id="t">Impact in numbers: All India Rank 1 at HackNow among 260+ teams, 500K+ tickets automated every year, 20+ developers use my dependency script daily, 12 integrations delivered, 700 coding problems solved</title>
   <style>
-    :root { --card: #FFFFFF; --ink: #1F2937; --mute: #6B7280; --acc: #7C3AED; --line: #DDD6FE; }
-    @media (prefers-color-scheme: dark) {
-      :root { --card: #0D1117; --ink: #F9FAFB; --mute: #9CA3AF; --acc: #A78BFA; --line: #30363D; }
-    }
     .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .card { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
     @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -12,43 +8,49 @@
   </style>
   <defs>
     <linearGradient id="bar" x1="0" x2="1">
-      <stop offset="0" stop-color="#7C3AED" /><stop offset="1" stop-color="#06B6D4" />
+      <stop offset="0" stop-color="#8B5CF6" /><stop offset="1" stop-color="#22D3EE" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151A33" /><stop offset="1" stop-color="#0F1220" />
+    </linearGradient>
+    <linearGradient id="num" x1="0" x2="1">
+      <stop offset="0" stop-color="#C4B5FD" /><stop offset="1" stop-color="#67E8F9" />
     </linearGradient>
   </defs>
 
   <g class="card" style="animation-delay:.05s">
-    <rect x="1" y="1" width="222" height="168" rx="16" fill="var(--card)" stroke="var(--line)" stroke-width="2" />
+    <rect x="1" y="1" width="222" height="168" rx="16" fill="url(#card)" stroke="#2A2F4A" stroke-width="2" />
     <rect x="1" y="1" width="222" height="6" rx="3" fill="url(#bar)" />
-    <text x="112" y="86" class="sans" font-size="46" font-weight="800" fill="var(--acc)" text-anchor="middle">AIR 1</text>
-    <text x="112" y="118" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">ServiceNow x Deloitte</text>
-    <text x="112" y="138" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">HackNow, 260+ teams</text>
+    <text x="112" y="86" class="sans" font-size="46" font-weight="800" fill="url(#num)" text-anchor="middle">AIR 1</text>
+    <text x="112" y="118" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">ServiceNow x Deloitte</text>
+    <text x="112" y="138" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">HackNow, 260+ teams</text>
   </g>
   <g class="card" style="animation-delay:.15s">
-    <rect x="245" y="1" width="222" height="168" rx="16" fill="var(--card)" stroke="var(--line)" stroke-width="2" />
+    <rect x="245" y="1" width="222" height="168" rx="16" fill="url(#card)" stroke="#2A2F4A" stroke-width="2" />
     <rect x="245" y="1" width="222" height="6" rx="3" fill="url(#bar)" />
-    <text x="356" y="86" class="sans" font-size="46" font-weight="800" fill="var(--acc)" text-anchor="middle">500K+</text>
-    <text x="356" y="118" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">tickets automated</text>
-    <text x="356" y="138" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">every year</text>
+    <text x="356" y="86" class="sans" font-size="46" font-weight="800" fill="url(#num)" text-anchor="middle">500K+</text>
+    <text x="356" y="118" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">tickets automated</text>
+    <text x="356" y="138" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">every year</text>
   </g>
   <g class="card" style="animation-delay:.25s">
-    <rect x="489" y="1" width="222" height="168" rx="16" fill="var(--card)" stroke="var(--line)" stroke-width="2" />
+    <rect x="489" y="1" width="222" height="168" rx="16" fill="url(#card)" stroke="#2A2F4A" stroke-width="2" />
     <rect x="489" y="1" width="222" height="6" rx="3" fill="url(#bar)" />
-    <text x="600" y="86" class="sans" font-size="46" font-weight="800" fill="var(--acc)" text-anchor="middle">20+</text>
-    <text x="600" y="118" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">developers use my</text>
-    <text x="600" y="138" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">dependency script daily</text>
+    <text x="600" y="86" class="sans" font-size="46" font-weight="800" fill="url(#num)" text-anchor="middle">20+</text>
+    <text x="600" y="118" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">developers use my</text>
+    <text x="600" y="138" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">dependency script daily</text>
   </g>
   <g class="card" style="animation-delay:.35s">
-    <rect x="733" y="1" width="222" height="168" rx="16" fill="var(--card)" stroke="var(--line)" stroke-width="2" />
+    <rect x="733" y="1" width="222" height="168" rx="16" fill="url(#card)" stroke="#2A2F4A" stroke-width="2" />
     <rect x="733" y="1" width="222" height="6" rx="3" fill="url(#bar)" />
-    <text x="844" y="86" class="sans" font-size="46" font-weight="800" fill="var(--acc)" text-anchor="middle">12</text>
-    <text x="844" y="118" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">integrations</text>
-    <text x="844" y="138" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">delivered</text>
+    <text x="844" y="86" class="sans" font-size="46" font-weight="800" fill="url(#num)" text-anchor="middle">12</text>
+    <text x="844" y="118" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">integrations</text>
+    <text x="844" y="138" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">delivered</text>
   </g>
   <g class="card" style="animation-delay:.45s">
-    <rect x="977" y="1" width="222" height="168" rx="16" fill="var(--card)" stroke="var(--line)" stroke-width="2" />
+    <rect x="977" y="1" width="222" height="168" rx="16" fill="url(#card)" stroke="#2A2F4A" stroke-width="2" />
     <rect x="977" y="1" width="222" height="6" rx="3" fill="url(#bar)" />
-    <text x="1088" y="86" class="sans" font-size="46" font-weight="800" fill="var(--acc)" text-anchor="middle">700</text>
-    <text x="1088" y="118" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">coding problems</text>
-    <text x="1088" y="138" class="sans" font-size="14" fill="var(--mute)" text-anchor="middle">solved</text>
+    <text x="1088" y="86" class="sans" font-size="46" font-weight="800" fill="url(#num)" text-anchor="middle">700</text>
+    <text x="1088" y="118" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">coding problems</text>
+    <text x="1088" y="138" class="sans" font-size="14" fill="#9CA3AF" text-anchor="middle">solved</text>
   </g>
 </svg>
