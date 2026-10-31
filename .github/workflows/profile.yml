@@ -1,9 +1,10 @@
 # Refreshes the live cards and the contribution snake in assets/.
 # Runs every 6 hours, on demand from the Actions tab, and when the generator changes.
 #
-# Optional: add a repo secret named PROFILE_TOKEN (a personal access token with the
-# read:user scope) to include private contributions in the numbers. Without it the
-# built-in token is used and only public activity is counted.
+# PROFILE_TOKEN (recommended): a personal access token with the read:user scope, saved as a repo
+# secret. Without it the built-in token is used, which can only see public activity, so the
+# heatmap and stats look smaller than your real profile. Also tick "Include private
+# contributions on my profile" in your GitHub profile settings.
 name: Profile cards
 
 on:
@@ -14,6 +15,7 @@ on:
     branches: [main]
     paths:
       - "scripts/**"
+      - "data/**"
       - ".github/workflows/profile.yml"
 
 permissions:
@@ -38,7 +40,11 @@ jobs:
         env:
           GH_LOGIN: ${{ github.repository_owner }}
           GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          HAS_PAT: ${{ secrets.PROFILE_TOKEN != '' }}
         run: python scripts/generate_stats.py --out assets
+
+      - name: Refresh the combined coding stats card
+        run: python scripts/generate_codolio.py
 
       - name: Generate the contribution snake
         uses: Platane/snk/svg-only@v3
@@ -52,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets
+          git add assets data
           if git diff --cached --quiet; then
             echo "No changes."
           else

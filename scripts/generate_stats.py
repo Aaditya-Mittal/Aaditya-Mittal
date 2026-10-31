@@ -42,6 +42,7 @@ query($login: String!) {
     contributionsCollection {
       totalCommitContributions
       totalPullRequestContributions
+      restrictedContributionsCount
       contributionCalendar {
         totalContributions
         weeks { contributionDays { contributionCount date } }
@@ -104,6 +105,7 @@ def sample_user() -> dict:
         "contributionsCollection": {
             "totalCommitContributions": 412,
             "totalPullRequestContributions": 9,
+            "restrictedContributionsCount": 0,
             "contributionCalendar": {
                 "totalContributions": sum(x["contributionCount"] for x in days),
                 "weeks": weeks,
@@ -145,7 +147,7 @@ def wrap(width: int, height: int, title: str, inner: str) -> str:
     )
 
 
-def stats_svg(user: dict, today: str) -> str:
+def stats_svg(user: dict, today: str, private_ok: bool = True) -> str:
     cc = user["contributionsCollection"]
     days = flatten_days(user)
     current, longest = streaks(days)
@@ -169,7 +171,8 @@ def stats_svg(user: dict, today: str) -> str:
             f'<text x="{x}" y="{y}" class="sans" font-size="30" font-weight="800" fill="var(--acc)">{escape(str(value))}</text>'
             f'<text x="{x}" y="{y + 22}" class="sans" font-size="12.5" fill="var(--mute)">{escape(label)}</text></g>'
         )
-    out.append(f'  <text x="548" y="236" class="mono" font-size="10.5" fill="var(--mute)" text-anchor="end">updated {today} UTC</text>')
+    scope = "includes private activity" if private_ok else "public activity only"
+    out.append(f'  <text x="548" y="236" class="mono" font-size="10.5" fill="var(--mute)" text-anchor="end">{scope}, updated {today} UTC</text>')
     return wrap(580, 250, "GitHub statistics", "\n".join(out))
 
 
@@ -209,13 +212,21 @@ def langs_svg(user: dict) -> str:
     return wrap(580, 250, "Top languages by code size", "\n".join(out))
 
 
-def heatmap_svg(user: dict) -> str:
+def heatmap_svg(user: dict, private_ok: bool = True) -> str:
     cal = user["contributionsCollection"]["contributionCalendar"]
     weeks = cal["weeks"]
     peak = max((d["contributionCount"] for w in weeks for d in w["contributionDays"]), default=0) or 1
     size, gap, x0, y0 = 17, 4, 70, 70
+    hidden = 0 if private_ok else user["contributionsCollection"].get("restrictedContributionsCount", 0)
+    if private_ok:
+        note = "includes private activity"
+    elif hidden:
+        note = f"public days shown, plus {hidden} private contributions"
+    else:
+        note = "public activity only"
     out = [f'  <text x="32" y="40" class="sans" font-size="18" font-weight="700" fill="var(--ink)">'
-           f'{cal["totalContributions"]} contributions in the last year</text>']
+           f'{cal["totalContributions"] + hidden} contributions in the last year</text>',
+           f'  <text x="32" y="230" class="mono" font-size="11" fill="var(--mute)">{escape(note)}</text>']
     for r, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         out.append(f'  <text x="32" y="{y0 + r * (size + gap) + 13}" class="mono" font-size="10.5" fill="var(--mute)">{label}</text>')
     last_month = None
@@ -255,12 +266,18 @@ def main() -> None:
             sys.exit("Set GH_LOGIN and GH_TOKEN, or run with --sample.")
         user = fetch(login, token)
 
+    # The built-in Actions token can only see public activity. A personal token (PROFILE_TOKEN)
+    # belongs to you, so GitHub also counts your private contributions.
+    private_ok = args.sample or os.environ.get("HAS_PAT") == "true"
+    if not private_ok:
+        print("No PROFILE_TOKEN: private contributions are not counted. See the README setup notes.")
+
     today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    (out / "stats.svg").write_text(stats_svg(user, today), encoding="utf-8")
+    (out / "stats.svg").write_text(stats_svg(user, today, private_ok), encoding="utf-8")
     (out / "langs.svg").write_text(langs_svg(user), encoding="utf-8")
-    (out / "heatmap.svg").write_text(heatmap_svg(user), encoding="utf-8")
+    (out / "heatmap.svg").write_text(heatmap_svg(user, private_ok), encoding="utf-8")
     print(f"wrote stats.svg, langs.svg, heatmap.svg to {out}/")
 
 
