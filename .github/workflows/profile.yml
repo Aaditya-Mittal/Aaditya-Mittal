@@ -1,0 +1,61 @@
+# Refreshes the live cards and the contribution snake in assets/.
+# Runs every 6 hours, on demand from the Actions tab, and when the generator changes.
+#
+# Optional: add a repo secret named PROFILE_TOKEN (a personal access token with the
+# read:user scope) to include private contributions in the numbers. Without it the
+# built-in token is used and only public activity is counted.
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate stats, languages and heatmap
+        env:
+          GH_LOGIN: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_stats.py --out assets
+
+      - name: Generate the contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: refresh profile cards"
+            git push
+          fi

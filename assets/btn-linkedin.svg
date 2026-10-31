@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 52" role="img" aria-label="Connect on LinkedIn">
+  <style>
+    :root { --btn: #FFFFFF; --ink: #1F2937; --line: #DDD6FE; }
+    @media (prefers-color-scheme: dark) { :root { --btn: #161B22; --ink: #F9FAFB; --line: #30363D; } }
+    .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  </style>
+  <rect x="1" y="1" width="228" height="50" rx="25" fill="var(--btn)" stroke="var(--line)" stroke-width="2" />
+  <rect x="12" y="10" width="32" height="32" rx="8" fill="#7C3AED" />
+  <text x="28" y="33" class="sans" font-size="19" font-weight="800" fill="#FFFFFF" text-anchor="middle">in</text>
+  <text x="56" y="31" class="sans" font-size="15" font-weight="700" fill="var(--ink)">Connect on LinkedIn</text>
+</svg>
