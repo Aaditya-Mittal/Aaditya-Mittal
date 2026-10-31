@@ -17,7 +17,8 @@
 </style>
   <defs><linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151A33" /><stop offset="1" stop-color="#0F1220" /></linearGradient></defs>
   <rect x="1" y="1" width="1198" height="248" rx="16" fill="url(#cardbg)" stroke="var(--line)" stroke-width="2" />
-  <text x="32" y="40" class="sans" font-size="18" font-weight="700" fill="var(--ink)">187 contributions in the last year</text>
+  <text x="32" y="40" class="sans" font-size="18" font-weight="700" fill="var(--ink)">188 contributions in the last year</text>
+  <text x="32" y="230" class="mono" font-size="11" fill="var(--mute)">public activity only</text>
   <text x="32" y="104" class="mono" font-size="10.5" fill="var(--mute)">Mon</text>
   <text x="32" y="146" class="mono" font-size="10.5" fill="var(--mute)">Wed</text>
   <text x="32" y="188" class="mono" font-size="10.5" fill="var(--mute)">Fri</text>
@@ -404,7 +405,7 @@
   <rect class="cell l1" x="1162" y="133" width="17" height="17" rx="4" style="animation-delay:728ms"><title>4 on 2026-10-28</title></rect>
   <rect class="cell l2" x="1162" y="154" width="17" height="17" rx="4" style="animation-delay:728ms"><title>8 on 2026-10-29</title></rect>
   <rect class="cell l2" x="1162" y="175" width="17" height="17" rx="4" style="animation-delay:728ms"><title>7 on 2026-10-30</title></rect>
-  <rect class="cell l4" x="1162" y="196" width="17" height="17" rx="4" style="animation-delay:728ms"><title>17 on 2026-10-31</title></rect>
+  <rect class="cell l4" x="1162" y="196" width="17" height="17" rx="4" style="animation-delay:728ms"><title>18 on 2026-10-31</title></rect>
   <text x="993" y="230" class="mono" font-size="10.5" fill="var(--mute)" text-anchor="end">less</text>
   <rect class="l0" x="1001" y="217" width="17" height="17" rx="4" />
   <rect class="l1" x="1022" y="217" width="17" height="17" rx="4" />

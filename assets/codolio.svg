@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="270" viewBox="0 0 640 270" role="img" aria-labelledby="t">
-  <title id="t">Codolio combined coding stats: 700 problems solved, 26 contests played, longest streak 177 days, streak badges for 365, 50 and 20 days</title>
+  <title id="t">Combined coding stats: 700 problems solved, 26 contests played, longest streak 177 days</title>
   <style>
     .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
@@ -19,21 +19,18 @@
   </defs>
   <rect x="1" y="1" width="638" height="268" rx="18" fill="url(#card)" stroke="#2A2F4A" stroke-width="2" />
 
-  <!-- header -->
   <rect x="28" y="24" width="32" height="32" rx="8" fill="#8B5CF6" />
   <path d="m39 34-6 6 6 6M49 34l6 6-6 6" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
   <text x="72" y="46" class="sans" font-size="20" font-weight="700" fill="#F3F4F6">Aaditya Mittal</text>
   <text x="612" y="46" class="mono" font-size="12" fill="#9CA3AF" text-anchor="end">all platforms, combined</text>
   <path d="M28 72H612" stroke="#2A2F4A" stroke-width="2" />
 
-  <!-- streak ring -->
   <circle cx="112" cy="156" r="48" fill="none" stroke="#232A45" stroke-width="10" />
   <circle class="ring" cx="112" cy="156" r="48" fill="none" stroke="url(#arc)" stroke-width="10" stroke-linecap="round" transform="rotate(-90 112 156)" />
   <text x="112" y="158" class="sans" font-size="30" font-weight="800" fill="#F3F4F6" text-anchor="middle">177</text>
   <text x="112" y="176" class="sans" font-size="12" fill="#9CA3AF" text-anchor="middle">days</text>
   <text x="112" y="234" class="mono" font-size="12" fill="#A78BFA" text-anchor="middle">LONGEST STREAK</text>
 
-  <!-- rows -->
   <g class="row" style="animation-delay:.2s">
     <text x="236" y="118" class="sans" font-size="16" font-weight="600" fill="#D1D5DB">Problems solved</text>
     <text x="604" y="118" class="sans" font-size="22" font-weight="800" fill="#F3F4F6" text-anchor="end">700</text>
@@ -49,5 +46,5 @@
     <text x="604" y="214" class="sans" font-size="18" font-weight="800" fill="#F3F4F6" text-anchor="end">365 / 50 / 20 days</text>
   </g>
 
-  <text x="612" y="254" class="mono" font-size="11" fill="#6B7280" text-anchor="end">as of October 2026</text>
+  <text x="612" y="254" class="mono" font-size="11" fill="#6B7280" text-anchor="end">saved numbers, as of October 2026</text>
 </svg>
