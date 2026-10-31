@@ -19,7 +19,7 @@
   <rect x="1" y="1" width="578" height="248" rx="16" fill="url(#cardbg)" stroke="var(--line)" stroke-width="2" />
   <text x="32" y="46" class="sans" font-size="18" font-weight="700" fill="var(--ink)">GitHub, by the numbers</text>
   <rect x="32" y="56" width="40" height="4" rx="2" fill="var(--acc)" />
-  <g class="in" style="animation-delay:0.00s"><text x="32" y="108" class="sans" font-size="30" font-weight="800" fill="var(--acc)">8</text><text x="32" y="130" class="sans" font-size="12.5" fill="var(--mute)">public repos</text></g>
+  <g class="in" style="animation-delay:0.00s"><text x="32" y="108" class="sans" font-size="30" font-weight="800" fill="var(--acc)">9</text><text x="32" y="130" class="sans" font-size="12.5" fill="var(--mute)">public repos</text></g>
   <g class="in" style="animation-delay:0.08s"><text x="216" y="108" class="sans" font-size="30" font-weight="800" fill="var(--acc)">0</text><text x="216" y="130" class="sans" font-size="12.5" fill="var(--mute)">stars earned</text></g>
   <g class="in" style="animation-delay:0.16s"><text x="400" y="108" class="sans" font-size="30" font-weight="800" fill="var(--acc)">5</text><text x="400" y="130" class="sans" font-size="12.5" fill="var(--mute)">followers</text></g>
   <g class="in" style="animation-delay:0.24s"><text x="32" y="174" class="sans" font-size="30" font-weight="800" fill="var(--acc)">223</text><text x="32" y="196" class="sans" font-size="12.5" fill="var(--mute)">commits, last year</text></g>
