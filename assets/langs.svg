@@ -21,17 +21,17 @@
   <rect x="32" y="56" width="40" height="4" rx="2" fill="var(--acc)" />
   <defs><clipPath id="bar"><rect x="32" y="84" width="516" height="14" rx="7" /></clipPath></defs>
   <g clip-path="url(#bar)">
-    <rect x="32.0" y="84" width="175.2" height="14" fill="#e34c26" />
-    <rect x="206.7" y="84" width="166.2" height="14" fill="#f34b7d" />
-    <rect x="372.4" y="84" width="106.0" height="14" fill="#DA5B0B" />
-    <rect x="478.0" y="84" width="36.3" height="14" fill="#3572A5" />
-    <rect x="513.7" y="84" width="18.5" height="14" fill="#663399" />
-    <rect x="531.8" y="84" width="16.7" height="14" fill="#f1e05a" />
+    <rect x="32.0" y="84" width="208.8" height="14" fill="#3178c6" />
+    <rect x="240.3" y="84" width="107.2" height="14" fill="#e34c26" />
+    <rect x="347.0" y="84" width="101.9" height="14" fill="#f34b7d" />
+    <rect x="448.4" y="84" width="65.0" height="14" fill="#DA5B0B" />
+    <rect x="512.9" y="84" width="22.3" height="14" fill="#3572A5" />
+    <rect x="534.7" y="84" width="13.8" height="14" fill="#663399" />
   </g>
-  <g class="in" style="animation-delay:0.00s"><circle cx="38" cy="132" r="6" fill="#e34c26" /><text x="52" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">HTML</text><text x="272" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">33.9%</text></g>
-  <g class="in" style="animation-delay:0.08s"><circle cx="308" cy="132" r="6" fill="#f34b7d" /><text x="322" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">C++</text><text x="542" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">32.1%</text></g>
-  <g class="in" style="animation-delay:0.16s"><circle cx="38" cy="164" r="6" fill="#DA5B0B" /><text x="52" y="168" class="sans" font-size="14" font-weight="600" fill="var(--ink)">Jupyter Notebook</text><text x="272" y="168" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">20.4%</text></g>
-  <g class="in" style="animation-delay:0.24s"><circle cx="308" cy="164" r="6" fill="#3572A5" /><text x="322" y="168" class="sans" font-size="14" font-weight="600" fill="var(--ink)">Python</text><text x="542" y="168" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">6.9%</text></g>
-  <g class="in" style="animation-delay:0.32s"><circle cx="38" cy="196" r="6" fill="#663399" /><text x="52" y="200" class="sans" font-size="14" font-weight="600" fill="var(--ink)">CSS</text><text x="272" y="200" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">3.5%</text></g>
-  <g class="in" style="animation-delay:0.40s"><circle cx="308" cy="196" r="6" fill="#f1e05a" /><text x="322" y="200" class="sans" font-size="14" font-weight="600" fill="var(--ink)">JavaScript</text><text x="542" y="200" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">3.1%</text></g>
+  <g class="in" style="animation-delay:0.00s"><circle cx="38" cy="132" r="6" fill="#3178c6" /><text x="52" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">TypeScript</text><text x="272" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">40.4%</text></g>
+  <g class="in" style="animation-delay:0.08s"><circle cx="308" cy="132" r="6" fill="#e34c26" /><text x="322" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">HTML</text><text x="542" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">20.7%</text></g>
+  <g class="in" style="animation-delay:0.16s"><circle cx="38" cy="164" r="6" fill="#f34b7d" /><text x="52" y="168" class="sans" font-size="14" font-weight="600" fill="var(--ink)">C++</text><text x="272" y="168" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">19.7%</text></g>
+  <g class="in" style="animation-delay:0.24s"><circle cx="308" cy="164" r="6" fill="#DA5B0B" /><text x="322" y="168" class="sans" font-size="14" font-weight="600" fill="var(--ink)">Jupyter Notebook</text><text x="542" y="168" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">12.5%</text></g>
+  <g class="in" style="animation-delay:0.32s"><circle cx="38" cy="196" r="6" fill="#3572A5" /><text x="52" y="200" class="sans" font-size="14" font-weight="600" fill="var(--ink)">Python</text><text x="272" y="200" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">4.2%</text></g>
+  <g class="in" style="animation-delay:0.40s"><circle cx="308" cy="196" r="6" fill="#663399" /><text x="322" y="200" class="sans" font-size="14" font-weight="600" fill="var(--ink)">CSS</text><text x="542" y="200" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">2.6%</text></g>
 </svg>
