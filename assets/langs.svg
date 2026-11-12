@@ -28,7 +28,7 @@
     <rect x="512.9" y="84" width="22.3" height="14" fill="#3572A5" />
     <rect x="534.7" y="84" width="13.8" height="14" fill="#663399" />
   </g>
-  <g class="in" style="animation-delay:0.00s"><circle cx="38" cy="132" r="6" fill="#3178c6" /><text x="52" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">TypeScript</text><text x="272" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">40.4%</text></g>
+  <g class="in" style="animation-delay:0.00s"><circle cx="38" cy="132" r="6" fill="#3178c6" /><text x="52" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">TypeScript</text><text x="272" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">40.3%</text></g>
   <g class="in" style="animation-delay:0.08s"><circle cx="308" cy="132" r="6" fill="#e34c26" /><text x="322" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">HTML</text><text x="542" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">20.7%</text></g>
   <g class="in" style="animation-delay:0.16s"><circle cx="38" cy="164" r="6" fill="#f34b7d" /><text x="52" y="168" class="sans" font-size="14" font-weight="600" fill="var(--ink)">C++</text><text x="272" y="168" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">19.7%</text></g>
   <g class="in" style="animation-delay:0.24s"><circle cx="308" cy="164" r="6" fill="#DA5B0B" /><text x="322" y="168" class="sans" font-size="14" font-weight="600" fill="var(--ink)">Jupyter Notebook</text><text x="542" y="168" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">12.5%</text></g>
