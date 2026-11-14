@@ -21,12 +21,12 @@
   <rect x="32" y="56" width="40" height="4" rx="2" fill="var(--acc)" />
   <defs><clipPath id="bar"><rect x="32" y="84" width="516" height="14" rx="7" /></clipPath></defs>
   <g clip-path="url(#bar)">
-    <rect x="32.0" y="84" width="208.7" height="14" fill="#3178c6" />
-    <rect x="240.2" y="84" width="107.2" height="14" fill="#e34c26" />
-    <rect x="346.8" y="84" width="102.2" height="14" fill="#f34b7d" />
+    <rect x="32.0" y="84" width="208.6" height="14" fill="#3178c6" />
+    <rect x="240.1" y="84" width="107.1" height="14" fill="#e34c26" />
+    <rect x="346.7" y="84" width="102.3" height="14" fill="#f34b7d" />
     <rect x="448.5" y="84" width="64.9" height="14" fill="#DA5B0B" />
     <rect x="512.9" y="84" width="22.3" height="14" fill="#3572A5" />
-    <rect x="534.7" y="84" width="13.8" height="14" fill="#663399" />
+    <rect x="534.8" y="84" width="13.7" height="14" fill="#663399" />
   </g>
   <g class="in" style="animation-delay:0.00s"><circle cx="38" cy="132" r="6" fill="#3178c6" /><text x="52" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">TypeScript</text><text x="272" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">40.3%</text></g>
   <g class="in" style="animation-delay:0.08s"><circle cx="308" cy="132" r="6" fill="#e34c26" /><text x="322" y="136" class="sans" font-size="14" font-weight="600" fill="var(--ink)">HTML</text><text x="542" y="136" class="mono" font-size="13" fill="var(--mute)" text-anchor="end">20.7%</text></g>
