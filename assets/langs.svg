@@ -21,10 +21,10 @@
   <rect x="32" y="56" width="40" height="4" rx="2" fill="var(--acc)" />
   <defs><clipPath id="bar"><rect x="32" y="84" width="516" height="14" rx="7" /></clipPath></defs>
   <g clip-path="url(#bar)">
-    <rect x="32.0" y="84" width="208.2" height="14" fill="#3178c6" />
-    <rect x="239.7" y="84" width="106.9" height="14" fill="#e34c26" />
-    <rect x="346.1" y="84" width="103.2" height="14" fill="#f34b7d" />
-    <rect x="448.7" y="84" width="64.8" height="14" fill="#DA5B0B" />
+    <rect x="32.0" y="84" width="208.1" height="14" fill="#3178c6" />
+    <rect x="239.6" y="84" width="106.9" height="14" fill="#e34c26" />
+    <rect x="346.0" y="84" width="103.3" height="14" fill="#f34b7d" />
+    <rect x="448.8" y="84" width="64.8" height="14" fill="#DA5B0B" />
     <rect x="513.0" y="84" width="22.3" height="14" fill="#3572A5" />
     <rect x="534.8" y="84" width="13.7" height="14" fill="#663399" />
   </g>
